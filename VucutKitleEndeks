@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    double boy, kilo,e;
+
+    Scanner input = new Scanner (System.in);
+    System.out.println("Boy Gir: ");
+    boy = input.nextInt();
+    System.out.println("Kilo Gir: ");
+    kilo = input.nextInt();
+
+    e = kilo/boy*boy;
+
+    System.out.println("Vücut Kitle Endeksi: "+e);
+
+  }
+}
