@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    int km;
+    double fiyat;
+
+    Scanner input = new Scanner (System.in);
+    System.out.println("KM Giriniz: ");
+    km = input.nextInt();
+
+    fiyat = 10 + (km * 2.20);
+
+    if (fiyat < 20) {
+      System.out.println("Ödenecek Ücret: 20 TL");
+    } else {
+      System.out.println("Ödenecek Ücret: " + fiyat);
+    }
+
+    
+  }
+}
