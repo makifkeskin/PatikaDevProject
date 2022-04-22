@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    int r;
+    double alan, cevre, pi=3.14,a,dilimalan;
+
+    Scanner input = new Scanner (System.in);
+    System.out.println("Yarıçap Gir: ");
+    r = input.nextInt();
+    System.out.println("Merkez Açı: ");
+    a = input.nextInt();
+
+    alan = pi*r*r;
+    cevre = 2*pi*r;
+    dilimalan = (pi*(r*r)*a)/360;
+
+    System.out.println("Alan: "+ alan);
+    System.out.println("Cevre: "+ cevre);
+    System.out.println("Daire Dilimi Alanı: "+ dilimalan);
+    
+  }
+}
