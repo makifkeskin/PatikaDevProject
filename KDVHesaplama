@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    double tutar, kdvOran = 0.18;
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Ücret Tutarını Giriniz: ");
+    tutar = input.nextDouble();
+    
+    double kdvTutar = tutar * kdvOran;
+    double kdvliTutar = tutar + kdvTutar;
+    double kdvsizTutar = tutar - kdvliTutar;
+
+    System.out.println("KDV Oranı: ");
+    System.out.println(kdvOran);
+
+    System.out.println("--------");
+    
+    System.out.println("KDVli Tutar: ");
+    System.out.println(kdvliTutar);
+
+    System.out.println("--------");
+
+    System.out.println("KDVsiz Tutar: ");
+    System.out.println(tutar);
+
+    //Eğer girilen tutar 0 ve 1000 TL arasında ise KDV oranı %18 , tutar 1000 TL'den büyük ise KDV oranını %8 olarak KDV tutarı hesaplama
+
+    if (tutar>0 || tutar<1000) {
+      double yeniTutar = tutar * 0.18;
+      System.out.println("Yeni KDVli Tutar: "+yeniTutar);
+    } else {
+      double yeniTutar = tutar * 0.08;
+      System.out.println("Yeni KDVli Tutar: "+yeniTutar);
+    }
+    
+  }
+}
