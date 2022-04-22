@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    
+    int mat, fiz, kim, turk, tari, muzik;
+
+    Scanner inp = new Scanner (System.in) ;
+
+    System.out.print("matematik notunuz: ");
+    mat = inp.nextInt();
+
+    System.out.print("fizik notunuz: ");
+    fiz = inp.nextInt();
+
+    System.out.print("kimya notunuz: ");
+    kim = inp.nextInt();
+
+    System.out.print("türkçe notunuz: ");
+    turk = inp.nextInt();
+
+    System.out.print("tarih notunuz: ");
+    tari = inp.nextInt();
+
+    System.out.print("müzik notunuz: ");
+    muzik = inp.nextInt();
+
+    int toplam = (mat + fiz + kim + turk + tari + muzik);
+    double sonuc = toplam / 6;
+
+    System.out.println("Ortalamanız: "+ sonuc);
+    
+    if (sonuc>60){
+       System.out.println("Geçtiniz");
+    } else {
+      System.out.println("Kaldınız");
+    }
+    
+    }
+}
