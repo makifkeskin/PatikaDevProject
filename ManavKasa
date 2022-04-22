@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    int armut,elma,domates,muz,patlican;
+    double toplam;
+
+    Scanner input = new Scanner (System.in);
+    
+    System.out.println("Kaç Kilo Armut: ");
+    armut = input.nextInt();
+    double afiyat = armut*2,14;
+      
+    System.out.println("Kaç Kilo elma: ");
+    elma = input.nextInt();
+    double efiyat = elma*3,67;
+      
+    System.out.println("Kaç Kilo domates: ");
+    domates = input.nextInt();
+    double dfiyat = domates*1,11;
+      
+    System.out.println("Kaç Kilo muz: ");
+    muz = input.nextInt();
+    double amuz = muz*0,95;
+    
+    System.out.println("Kaç Kilo patlıcan: ");
+    patlican = input.nextInt();
+    double apatlican = patlican*5,00;
+
+    toplam = afiyat+efiyat+dfiyat+amuz+apatlican;
+
+    System.out.println("Toplam Ücret: "+toplam);
+ 
+
+  }
+}
