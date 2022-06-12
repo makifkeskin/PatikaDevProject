@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+<h1>Mehmet KESKİN</h1>
+<br>
+<h2>Hakkımda</h2>
+<p>Bu alan benim hakkımda bilgileri oluşturuyor.</p>
+<img src="res_car.jpg" alt="ICar Picture">
+<br>
+<h2>Kitap Listesi</h2>
+<ul>
+  <li>Sefiller - Victor Hugo</li>
+  <li>Vadideki Zambak - Honore de Balzac</li>
+  <li>Ana - Maksim Gorki</li>
+</ul>
+</body>
+</html>
