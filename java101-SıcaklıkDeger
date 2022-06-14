@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+
+    int sicaklik;
+
+    Scanner input = new Scanner (System.in);
+
+    System.out.println("Sıcaklık kaç derece?");
+    sicaklik = input.nextInt();
+
+    if(sicaklik<10){
+      System.out.println("Dışarı Çıkılmaz evde kal!");
+    } else {
+      System.out.println("Serbestsin!");
+    }
+
+    }
+}
